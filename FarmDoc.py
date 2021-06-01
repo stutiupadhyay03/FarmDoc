@@ -298,7 +298,3 @@ disease=image.load_img('/Users/ASUS/test/test/CornCommonRust2.JPG')
 plt.imshow(disease)
 print (Classes[int(result)])
 
-import tensorflow as tf
-converter = tf.lite.TFLiteConverter.from_keras_model_file('crop.h5') 
-tfmodel = converter.convert() 
-open ("output.tflite" , "wb") .write(tfmodel)
